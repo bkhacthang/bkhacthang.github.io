@@ -26,6 +26,13 @@
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+      <style>
+        .chatbot-inline {
+          height: 600px;
+          width: 80%;
+        }
+      </style>
 </head>
 <!-- body -->
 <body class="main-layout">
@@ -103,30 +110,33 @@
         <div class="titlepage2">
           <h2>our <strong class="cur">Team</strong></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
-          <div class="chatbot-container" style="height: 100%"></div>
-          <script> 
-            var HeymaryConfig={appId:"s1a8edbd0-54e7-11ea-b416-cb5ed08eaea2",mode:"inline"};
-            ! function(t, a) {
-              var e = function() {
-                  (e.q = e.q || []).push(arguments)
-              };
-              e.q = e.q || [], t.BotStarApi = e;
-              ! function() {
-                  var t = a.createElement("script");
-                  var c = a.createElement("link");
-                  var k = a.createElement("chat-heymary");
-                  k.setAttribute('app-id',HeymaryConfig.appId),k.setAttribute('mode',HeymaryConfig.mode);
-                  c.href="https://hellomary.tech:5000/static/css/heymary-widget.css",c.rel="stylesheet";
-                  t.type = "text/javascript", t.async = 1, t.src = "https://hellomary.tech:5000/static/js/heymary-widget.js";
-                  var b = a.getElementsByClassName("chatbot-container")[0];
-                  var e = a.getElementsByTagName("script")[0];
-                  var h = a.getElementsByTagName("head")[0];
-                  b.appendChild(k)
-                  h.appendChild(c)
-                  e.parentNode.insertBefore(t, e)
-              }();
-            }(window, document)
-          </script>
+          <div class="chatbot-inline">
+            <div class="chatbot-container" style="height: 100%"></div>
+            <script> 
+              var HeymaryConfig={appId:"s1a8edbd0-54e7-11ea-b416-cb5ed08eaea2",mode:"inline"};
+              ! function(t, a) {
+                var e = function() {
+                    (e.q = e.q || []).push(arguments)
+                };
+                e.q = e.q || [], t.BotStarApi = e;
+                ! function() {
+                    var t = a.createElement("script");
+                    var c = a.createElement("link");
+                    var k = a.createElement("chat-heymary");
+                    k.setAttribute('app-id',HeymaryConfig.appId),k.setAttribute('mode',HeymaryConfig.mode);
+                    c.href="https://hellomary.tech:5000/static/css/heymary-widget.css",c.rel="stylesheet";
+                    t.type = "text/javascript", t.async = 1, t.src = "https://hellomary.tech:5000/static/js/heymary-widget.js";
+                    var b = a.getElementsByClassName("chatbot-container")[0];
+                    var e = a.getElementsByTagName("script")[0];
+                    var h = a.getElementsByTagName("head")[0];
+                    b.appendChild(k)
+                    h.appendChild(c)
+                    e.parentNode.insertBefore(t, e)
+                }();
+              }(window, document)
+            </script>
+          </div>
+          
         </div>
       </div>
     </div>
